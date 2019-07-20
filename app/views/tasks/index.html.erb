@@ -4,7 +4,8 @@
   <% check = "" %>
   <% task.complete == true ? check = "☑︎" : check = "☐" %>
   <div class="task-list">
-    <p> <%= check %> <%= link_to task.title, task_path(task) %> </p>
+    <p> <%= check %> <%= link_to task.title, task_path(task) %></p>
+    <p> <%= link_to "🗑", task_path(task), method: :delete %></p>
   </div>
 <% end %>
 

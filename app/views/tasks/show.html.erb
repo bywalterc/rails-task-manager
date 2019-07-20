@@ -1,5 +1,5 @@
 <h1><%= @task.title %></h1>
-<div class="task-list">
+<div class="boxed">
   <p> <%=  @task.details %></p>
 </div>
 <% check = "" %>
@@ -8,9 +8,7 @@
   <p> <%= check %></p>
 </div>
 
-<div class="bottom-link">
-  <%= link_to "Edit task", task_edit_path(@task)  %>
-</div>
+<button type="button" class="btn btn-light btn-lg"><%= link_to "✍️ Edit task", task_edit_path(@task)  %></button>
 
 <div class="bottom-link">
   <%= link_to "⟵ Back to list", tasks_path  %>

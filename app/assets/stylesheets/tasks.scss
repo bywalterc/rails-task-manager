@@ -16,9 +16,12 @@ h1 {
 
 .bottom-link {
   margin-top: 32px;
+  font-size: 18px;
 }
 
 .task-list {
+  display: flex;
+  justify-content: space-between;
   margin: 10px 0px;
   background: white;
   padding: 10px;
@@ -26,3 +29,17 @@ h1 {
   box-shadow: 0px 10px 30px rgba(0,0,0,0.1);
   font-size: 18px;
 }
+
+.boxed {
+  margin: 10px 0px;
+  background: white;
+  padding: 10px;
+  border-radius: 4px;
+  box-shadow: 0px 10px 30px rgba(0,0,0,0.1);
+  font-size: 18px;
+}
+
+.completed {
+  font-size: 14px;
+}
+
